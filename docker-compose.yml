@@ -1,0 +1,18 @@
+version: '2'
+services:
+  web:
+    build: .
+    command: php -S 0.0.0.0:8000 -t /code/
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    volumes:
+      - .:/code
+    environment:
+      XDEBUG_CONFIG: "remote_host=192.168.0.100"
+  db:
+    image: orchardup/mysql
+    environment:
+      MYSQL_DATABASE: wordpress
+

@@ -1,0 +1,12 @@
+.full-width-bcgr {
+  width: 100%;
+  .container {
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    @media only screen and (min-width: 1240px) {
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.top-news{
+  .carousel-inner{
+    position: relative;
+    .content-slider-container{
+      position:absolute;
+      top:30%;
+      left: 50%;
+      margin-left: -620px;
+      color:#ffffff;
+      h2{
+        font-size: 40px;
+        margin-bottom: 30px;
+      }
+      .btn-more{
+        background: #2d8e25;
+        padding: 5px 15px;
+        display: table;
+        margin-top: 20px;
+        a{
+          color:#ffffff;
+        }
+      }
+    }
+    .item{
+      .img-slider-full-width{
+        width: 100%!important;
+        height: 400px;
+      }
+    }
+  }
+}
+.descr-top-news{
+
+}
