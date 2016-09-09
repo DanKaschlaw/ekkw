@@ -1,16 +1,25 @@
 .btn-more-posts{
-  background: #9ae294;
-  font-weight: bold;
-  padding: 30px 0;
-  width: 100%;
-  text-align: center;
+  background: #c1d6ff;
   .vc_btn3-color-default{
+    color:#646463;
     background: transparent;
     border: 0;
+    font-size: 20px;
     &:hover{
       background: transparent;
       border: 0;
       cursor: pointer;
     }
   }
+  @media only screen and (min-width: 768px) {
+    background: #9ae294;
+    .vc_btn3-color-default{
+      color:#000;
+      font-size: 14px;
+    }
+  }
+  font-weight: bold;
+  padding: 30px 0;
+  width: 100%;
+  text-align: center;
 }

@@ -1,7 +1,7 @@
 .vc_row{
   @media only screen and (min-width: 1240px) {
     max-width: 1240px;
-    padding: 30px;
+    padding: 30px 0;
     box-sizing: border-box;
     margin: 0 auto;
   }
@@ -12,6 +12,7 @@
     max-width: none;
     width: 100%;
     padding: 0;
+    margin: 0;
     .vc_column-inner{
       padding: 0;
     }

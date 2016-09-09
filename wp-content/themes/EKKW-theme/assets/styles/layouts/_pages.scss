@@ -2,11 +2,21 @@
   width: 100%;
   .container {
     width: 100%;
-    padding: 0 30px;
     box-sizing: border-box;
     @media only screen and (min-width: 1240px) {
       max-width: 1240px;
       margin: 0 auto;
+    }
+  }
+}
+main{
+  width: 100%!important;
+  .container-inner-page{
+    padding: 0 300px 0 150px;
+    @media only screen and (min-width: 2100px) {
+      max-width: 2100px;
+      margin: 0 auto;
+      box-sizing: border-box;
     }
   }
 }

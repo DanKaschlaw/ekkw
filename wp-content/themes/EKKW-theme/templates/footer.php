@@ -7,7 +7,7 @@
   <div class="copyright-bar">
     <div class="container">
       <div class="row">
-        <div class="hear-icon"><img src="<?php bloginfo('template_url') ?>/dist/images/footer-heart.gif"></div>
+        <div class="hear-icon hidden-xs hidden-sm"><img src="<?php bloginfo('template_url') ?>/dist/images/footer-heart.gif"></div>
         <div class="col-xs-12 col-sm-6 col-md-9">Copyright <?php echo date('Y')?> Kirchenkreis Melsungen</div>
         <div class="col-xs-12 col-sm-6 col-md-3">
           <?php dynamic_sidebar('copyright-bar'); ?>
