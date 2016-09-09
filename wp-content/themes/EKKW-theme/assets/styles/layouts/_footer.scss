@@ -1,0 +1,45 @@
+footer{
+  padding-top: 40px;
+  .widget{
+    float: left;
+    display: none;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    &:first-of-type{
+      .textwidget{
+        color: #797979;
+      }
+    }
+    &:nth-of-type(3),&:last-of-type{
+      display: block;
+    }
+    @media only screen and (min-width: 768px) {
+      width: 50%;
+    }
+    @media only screen and (min-width: 992px){
+      display: block;
+      width: 25%;
+    }
+    h3{
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    .list{
+      list-style: none;
+      padding-left: 0;
+      li{
+        padding: 10px 0;
+        border-bottom: 1px solid #eaeaea;
+        cursor: pointer;
+        &:hover{
+          text-decoration: none;
+        }
+        a{
+          color:#000;
+        }
+      }
+    }
+  }
+}

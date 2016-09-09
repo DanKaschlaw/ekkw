@@ -71,6 +71,14 @@ function widgets_init() {
     'before_title'  => '<h3>',
     'after_title'   => '</h3>'
   ]);
+  register_sidebar([
+      'name'          => __('Copyright Bar', 'sage'),
+      'id'            => 'copyright-bar',
+      'before_widget' => '<div class="widget %1$s %2$s">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h3>',
+      'after_title'   => '</h3>'
+  ]);
 }
 add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
 
@@ -113,3 +121,7 @@ if( function_exists('acf_add_options_page') ) {
   acf_add_options_sub_page('Home');
 
 }
+
+
+
+

@@ -1,0 +1,19 @@
+.vc_row{
+  @media only screen and (min-width: 1240px) {
+    max-width: 1240px;
+    padding: 30px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  h2,h3{
+    text-align: center;
+  }
+  &.btn-row{
+    max-width: none;
+    width: 100%;
+    padding: 0;
+    .vc_column-inner{
+      padding: 0;
+    }
+  }
+}

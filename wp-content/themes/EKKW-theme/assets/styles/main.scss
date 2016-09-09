@@ -5,6 +5,9 @@
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+.main{
+  padding: 0!important;
+}
 @import "common/global";
 @import "components/buttons";
 @import "components/comments";
@@ -19,3 +22,6 @@
 @import "layouts/tinymce";
 @import "layouts/home-page";
 @import "components/top-menu";
+@import "components/copyright_bar";
+@import "components/visual_composer_style";
+@import "components/post_module";

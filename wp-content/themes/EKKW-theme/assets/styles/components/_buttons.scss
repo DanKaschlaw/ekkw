@@ -1,0 +1,16 @@
+.btn-more-posts{
+  background: #9ae294;
+  font-weight: bold;
+  padding: 30px 0;
+  width: 100%;
+  text-align: center;
+  .vc_btn3-color-default{
+    background: transparent;
+    border: 0;
+    &:hover{
+      background: transparent;
+      border: 0;
+      cursor: pointer;
+    }
+  }
+}

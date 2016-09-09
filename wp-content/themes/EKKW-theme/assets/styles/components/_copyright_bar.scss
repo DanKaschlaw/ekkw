@@ -1,0 +1,18 @@
+.copyright-bar {
+  margin-top: 75px;
+  border-top: 1px solid  #eaeaea;
+  padding: 35px 0;
+  position: relative;
+  .hear-icon{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -88px;
+  }
+  .widget{
+    width: 100%;
+    h3{
+      display: none;
+    }
+  }
+}
