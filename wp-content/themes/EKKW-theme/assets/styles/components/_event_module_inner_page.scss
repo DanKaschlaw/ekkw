@@ -1,0 +1,32 @@
+.event-post{
+  padding-bottom: 50px;
+  border-bottom: 1px solid #e8e7e7;
+  position: relative;
+  .event-date{
+    float: left;
+    padding: 10px;
+    background: green;
+    color:#fff;
+    margin-right: 25px;
+    .day{
+      font-size: 30px;
+    }
+  }
+  .thumbnail-img{
+    float: left;
+    margin-right: 30px;
+  }
+  .container-event-content{
+    width: auto;
+  }
+  .title{
+    color:#000;
+    font-size: 25px;
+  }
+  .read-more{
+    position: absolute;
+    bottom: 10px;
+    right:0;
+    color:#334653;
+  }
+}
