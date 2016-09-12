@@ -1,0 +1,47 @@
+.vc_tta-panels{
+  .vc_tta-panel-heading, .vc_tta-panel-body{
+    background-color: #fff!important;
+    border-left:0!important;
+    border-right:0!important;
+    margin-left: 35px!important;
+  }
+  .vc_tta-panel-body{
+    margin-left: 0!important;
+    padding-left: 0!important;
+    border-top:0!important;
+    color:#707d8d!important;
+  }
+  .vc_tta-panel-heading{
+    .vc_tta-panel-title{
+      .vc_tta-title-text{
+        color:#38393f;
+      }
+      a{
+        padding-left: 0!important;
+      }
+      .vc_tta-controls-icon{
+        width: 22px;
+        height: 22px;
+        background: green;
+        left: -30px!important;
+        &:before{
+          border-color:#fff;
+          left:5px;
+          right: 5px;
+        }
+        &:after{
+          border-color:#fff;
+          bottom: 5px;
+          top:5px;
+        }
+      }
+      .vc_tta-controls-icon-plus{
+       background: #fff;
+        border:1px solid #000;
+        &:before, &:after{
+          border-color:#2d8e25;
+        }
+      }
+    }
+  }
+}

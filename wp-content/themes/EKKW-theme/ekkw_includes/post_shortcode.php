@@ -39,7 +39,6 @@ function ekkw_post_event_home( $atts ) {
 
 	$current_post =  get_post($a['post']);
 
-
 	$output =
 		'<div class="item-post">
 	<a class="thumbnail-img clearfix" href ="'. get_permalink($current_post).'">
@@ -49,7 +48,7 @@ function ekkw_post_event_home( $atts ) {
 		<a class="title" href ="'.get_permalink($current_post).'">'
 			. $current_post->post_title.'
 		</a><br/>
-		<span>'.$current_post->post_date.'</span>
+		<span>'.get_field('event_date',$current_post).'</span>
 	</div>
 
 </div>';

@@ -1,4 +1,16 @@
-.brand{
-  float: left;
-  padding-top: 15px;
+.navbar{
+  .brand{
+    float: left;
+    padding-top: 15px;
+    color:#6699ff;
+    @media only screen and (min-width: 768px) {
+      color:#27ae60;
+    }
+  }
+  .navbar-toggle{
+    border: 0;
+    .icon-bar{
+      background-color: #6699ff;
+    }
+  }
 }
