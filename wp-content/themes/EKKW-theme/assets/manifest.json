@@ -2,11 +2,13 @@
   "dependencies": {
     "main.js": {
       "files": [
+        "scripts/calendar.js",
         "scripts/main.js"
       ],
       "main": true
     },
     "main.css": {
+      "bower": ["jquery-ui"],
       "files": [
         "styles/main.scss"
       ],

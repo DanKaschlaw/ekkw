@@ -7,7 +7,9 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "3.3.6"
+    "bootstrap-sass": "3.3.6",
+    "jquery-ui": "^1.12.0",
+    "jquery": "^3.1.0"
   },
   "overrides": {
     "bootstrap-sass": {
@@ -30,6 +32,12 @@
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.ttf",
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
+      ]
+    },
+    "jquery-ui": {
+      "main": [
+        "./jquery-ui.js",
+        "./themes/base/jquery-ui.css"
       ]
     }
   }

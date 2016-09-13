@@ -33,28 +33,30 @@ function ekkw_post_news( $atts ) {
 add_shortcode('ekkw-post-news', 'ekkw_post_news');
 
 function ekkw_post_event_home( $atts ) {
-	$a = shortcode_atts(array(
+	$a = shortcode_atts( array(
 		'post' => null,
-	),$atts);
+	), $atts );
 
-	$current_post =  get_post($a['post']);
+	$current_post = get_post( $a['post'] );
 
-	$output =
-		'<div class="item-post">
-	<a class="thumbnail-img clearfix" href ="'. get_permalink($current_post).'">
-		'.get_the_post_thumbnail($current_post,'thumbnail').'
-	</a>
-	<div class="container-post-event-content">
-		<a class="title" href ="'.get_permalink($current_post).'">'
-			. $current_post->post_title.'
-		</a><br/>
-		<span>'.get_field('event_date',$current_post).'</span>
-	</div>
+	if ( has_category( 'Event', $current_post ) ) {
+		$output =
+			'<div class="item-post">
+				<a class="thumbnail-img clearfix" href ="' . get_permalink( $current_post ) . '">
+					' . get_the_post_thumbnail( $current_post, 'thumbnail' ) . '
+				</a>
+				<div class="container-post-event-content">
+					<a class="title" href ="' . get_permalink( $current_post ) . '">'
+			. $current_post->post_title . '
+					</a><br/>
+					<span>' . get_field( 'event_date', $current_post ) . '</span>
+				</div>
 
-</div>';
-	return $output;
+			</div>';
+
+		return $output;
+	}
 }
-
 add_shortcode('ekkw-event-home', 'ekkw_post_event_home');
 
 function ekkw_post_event_inner( $atts ) {
