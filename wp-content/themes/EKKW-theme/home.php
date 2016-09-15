@@ -3,6 +3,9 @@
  * Template Name: Home
  */
 ?>
+<section class="search">
+	<div class="container"><?php dynamic_sidebar('primary'); ?></div>
+</section>
 <section class = "top-news full-width-bcgr">
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="50000000">
 			<div class="carousel-inner" role="listbox">

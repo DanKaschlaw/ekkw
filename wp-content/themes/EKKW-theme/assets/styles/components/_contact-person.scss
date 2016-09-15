@@ -3,6 +3,10 @@
     width: 380px;
     height: 300px;
     overflow: hidden;
+    img{
+      width: 100%;
+      height: auto;
+    }
   }
   .name{
     margin: 25px 0 15px 0;
