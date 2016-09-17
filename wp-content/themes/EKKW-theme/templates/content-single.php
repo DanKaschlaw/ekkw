@@ -1,5 +1,5 @@
 <?php while (have_posts()) : the_post(); ?>
-    <div class="container-inner-page">
+    <div class="container">
       <article <?php post_class(); ?>>
         <header>
           <h1 class="entry-title"><?php the_title(); ?></h1>

@@ -7,4 +7,30 @@
       width: 1240px;
     }
   }
+  .menu-item{
+    position: relative;
+    .sub-menu{
+      padding: 0;
+      list-style: none;
+      display: none;
+    }
+    &:hover{
+      .sub-menu{
+        display: block;
+        position: absolute;
+        z-index: 100;
+        top:50px;
+        background: #fff;
+        left: 14px;
+        width: 200px;
+        padding: 10px;
+        border-bottom: 1px dotted #ccc;
+        li{
+          a{
+            color:#333;
+          }
+        }
+      }
+    }
+  }
 }

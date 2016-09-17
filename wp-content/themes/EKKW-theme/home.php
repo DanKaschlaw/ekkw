@@ -3,9 +3,9 @@
  * Template Name: Home
  */
 ?>
-<section class="search">
-	<div class="container"><?php dynamic_sidebar('primary'); ?></div>
-</section>
+<!--<section class="search">
+	<div class="container"><?php /*dynamic_sidebar('primary'); */?></div>
+</section>-->
 <section class = "top-news full-width-bcgr">
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="50000000">
 			<div class="carousel-inner" role="listbox">
@@ -16,6 +16,7 @@
 						$image = get_sub_field('image_url');
 						$content = get_sub_field('content_slide');
 						$title = get_sub_field('title_slide');
+						$btn_title = get_sub_field('btn_title');
 						$href = get_sub_field('btn_link_more');
 						?>
 						<div class="item <?php echo  $rows_counter == 0? 'active' : '' ?>">
@@ -23,7 +24,7 @@
 							<div class="container content-slider-container">
 								<h2><?php echo $title ?> </h2>
 								<div> <?php echo $content ?></div>
-								<div class="btn-more"><a  href="<?php echo $href;?>">More</a></div>
+								<div class="btn-more"><a  href="<?php echo $href;?>"><?php echo $btn_title;?></a></div>
 							</div>
 						</div>
 						<?php

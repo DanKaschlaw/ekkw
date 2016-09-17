@@ -8,11 +8,13 @@
   h2,h3{
     text-align: center;
   }
-  &.btn-row{
+  &.btn-row, &.full-width-bcgr{
     max-width: none;
     width: 100%;
     padding: 0;
     margin: 0;
+    background-size:cover;
+    background-repeat: no-repeat;
     .vc_column-inner{
       padding: 0;
     }
