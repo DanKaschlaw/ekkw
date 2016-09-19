@@ -18,7 +18,8 @@ $sage_includes = [
   'lib/customizer.php', // Theme customizer
   'ekkw_includes/post_shortcode.php',
   'ekkw_includes/ekkw-functions.php',
-  'ekkw_includes/contact_person_shortcode.php'
+  'ekkw_includes/contact_person_shortcode.php',
+  'ekkw_includes/slider_shortcode.php'
 ];
 
 foreach ($sage_includes as $file) {
