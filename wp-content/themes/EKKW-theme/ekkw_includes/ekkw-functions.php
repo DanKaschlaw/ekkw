@@ -240,3 +240,37 @@ if( function_exists('acf_add_local_field_group') ):
 	));
 
 endif;
+
+
+function acf_add_type_gemeinden() {
+	$labels = array(
+		"name" => __( 'Gemeinden', 'sage' ),
+		"singular_name" => __( 'Gemeinden', 'sage' ),
+	);
+
+	$args = array(
+		"label" => __( 'Gemeinden', 'sage' ),
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => false,
+		"rest_base" => "",
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => array( "slug" => "gemeinden", "with_front" => true ),
+		"query_var" => true,
+
+		"supports" => array( "title", "editor", "thumbnail")
+	);
+
+	register_post_type( "gemeinden", $args );
+}
+
+
+add_action('init', __NAMESPACE__ . '\\ acf_add_type_gemeinden');

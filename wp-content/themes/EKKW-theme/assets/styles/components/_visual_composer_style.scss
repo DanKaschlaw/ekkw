@@ -8,7 +8,7 @@
   h2,h3{
     text-align: center;
   }
-  &.btn-row, &.full-width-bcgr, &.slider{
+  &.btn-row, &.full-width-bcgr, &.slider, &.yellow-block-home-page{
     max-width: none;
     width: 100%;
     padding: 0;
@@ -18,6 +18,15 @@
     .vc_column-inner{
       padding: 0;
     }
+  }
+  &.yellow-block-home-page{
+    text-align: center;
+    .wpb_column{
+      max-width: 800px;
+      float: none;
+      margin: 0 auto;
+    }
+
   }
 }
 
