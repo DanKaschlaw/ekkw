@@ -36,6 +36,14 @@
   }
   .container-post-news-content{
     padding-top: 15px;
+    .content{
+      max-height: 80px;
+      overflow: hidden;
+    }
+    .read-more{
+      color:#334653;
+      margin-top: 20px;
+    }
   }
 }
 

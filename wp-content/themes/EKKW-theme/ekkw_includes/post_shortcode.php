@@ -11,7 +11,7 @@ function ekkw_post_news( $atts ) {
 	),$atts);
 
 	$current_post =  get_post($a['post']);
-
+	$post_date = get_the_date('F jS, Y');
 
 	$output =
 '<div class="item-post">
@@ -22,8 +22,9 @@ function ekkw_post_news( $atts ) {
 		<a class="title" href ="'.get_permalink($current_post).'">'
 		. $current_post->post_title.'
 		</a><br/>
-		<span>'.$current_post->post_date.'</span><br/>
+		<span>'.$post_date.'</span><br/>
 		<div class="content">' . $current_post->post_content .'</div>
+		<a href="'. get_permalink($current_post).'" class="read-more pull-right">Weiterlesen &rsaquo;</a>
 	</div>
 
 </div>';
