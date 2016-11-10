@@ -1,0 +1,62 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cf7-html-email-template-extension\n"
+"POT-Creation-Date: 2016-08-27 00:06-0300\n"
+"PO-Revision-Date: 2016-08-27 00:09-0300\n"
+"Last-Translator: Mário Valney <mariovalney@gmail.com>\n"
+"Language-Team: Mário Valney <mariovalney@gmail.com>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: __;_e;_x;_ex;esc_attr_e\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: switch-user.php:267
+msgid "The Switch_User was overwritten..."
+msgstr "A classe Switch_User foi sobreescrita..."
+
+#: modules/frontend/class-switch-user-frontend.php:81
+#: modules/frontend/class-switch-user-frontend.php:99
+msgid "Core was not passed in \"Switch_User_Frontend\"."
+msgstr "Core não foi passado em \"Switch_User_Frontend\"."
+
+#: modules/frontend/class-switch-user-frontend.php:133
+msgid "Current user successfully changed."
+msgstr "O usuário atual foi alterado com sucesso."
+
+#: modules/frontend/class-switch-user-frontend.php:134
+msgid "Oops... error: please try again."
+msgstr "Oops... Erro: por favor, tente novamente."
+
+#: modules/frontend/class-switch-user-frontend.php:135
+msgid "There was a connection error, please try again."
+msgstr "Houve um erro de conexão, por favor, tente novamente."
+
+#: modules/frontend/class-switch-user-frontend.php:161
+msgid "Click to expand/contract"
+msgstr "Clique para abrir/fechar"
+
+#: modules/frontend/class-switch-user-frontend.php:162
+msgid "Switch User:"
+msgstr "Switch User:"
+
+#: modules/frontend/class-switch-user-frontend.php:170
+msgid "You are logged as this user"
+msgstr "Você está logado como esse usuário"
+
+#: modules/frontend/class-switch-user-frontend.php:172
+msgid "Click to login as this user"
+msgstr "Clique para entrar como esse usuário"
+
+#: modules/frontend/class-switch-user-frontend.php:216
+msgid "Invalid user ID."
+msgstr "ID de usuário inválido."
+
+#: modules/frontend/class-switch-user-frontend.php:225
+msgid "You are not allowed to do that."
+msgstr "Você não possui permissão para isso."

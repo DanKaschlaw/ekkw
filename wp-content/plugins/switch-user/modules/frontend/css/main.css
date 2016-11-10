@@ -1,0 +1,93 @@
+#su-wrapper {
+	font-family: 'Arial', 'Calibri';
+	line-height: 1.3;
+	display: block;
+	position: fixed;
+	top: 20%;
+	right: -200px;
+	width: 200px;
+	background: #FFFFFF;
+	z-index: 999999;
+	color: #000000;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	max-height: 300px;
+	overflow: visible;
+	padding: 0 0 0 0;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+#su-wrapper.open {
+	right: 0;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+#su-wrapper .su-wrapper-toggle {
+	position: absolute;
+	left: -40px;
+	top: 50%;
+	font-size: 30px;
+	width: 40px;
+	height: 50px;
+	text-align: center;
+	background: #FFFFFF;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	margin-top: -25px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+	cursor: pointer;
+}
+
+#su-wrapper .su-wrapper-toggle:before {
+	content: "<";
+	line-height: 50px;
+}
+
+#su-wrapper.open .su-wrapper-toggle:before {
+	content: ">";
+}
+
+#su-wrapper h1 {
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 20px;
+	color: #000;
+	margin: 15px 20px 0 20px;
+}
+
+#su-wrapper hr {
+    display: block;
+    margin: 0.7rem 0!important;
+    background-color: #d1d1d1;
+}
+
+#su-wrapper ul {
+	display: block;
+	margin: 0;
+	max-height: 230px;
+	padding: 0;
+	overflow-y: scroll;
+	border-bottom-left-radius: 10px;
+}
+
+#su-wrapper li {
+	display: block;
+	padding: 5px 10px 5px 20px;
+	cursor: pointer;
+}
+
+#su-wrapper li.current-user {
+	background: #CCCCCC;
+	cursor: default;
+}
+
+#su-wrapper li:hover {
+	background: #CCCCCC;
+}
